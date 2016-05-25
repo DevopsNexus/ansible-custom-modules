@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+    - name: what is the return code 
+      url_code: url=http://trainingdevops.com
+      register: result
+
+    - debug: var=result 
